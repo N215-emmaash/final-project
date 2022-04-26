@@ -20,4 +20,4 @@
 *Must use the MVC model we have discussed.
 *Upload your project to Github and Web4 and add your Web4 link to the README file in Github, and submit your Github link.
 
-Web 4 Link: https://in-info-web4.informatics.iupui.edu/~emmaash/N215/final-project
+Web 4 Link: https://in-info-web4.informatics.iupui.edu/~emmaash/N215/final-project/
