@@ -580,12 +580,12 @@ export function modelPageName (pgName){
     if(pgName == "homeContent"){
         $("nav a").removeClass("blue-text").addClass("white-text");
         $("hr").removeClass("black-line").addClass("white-line");
-        $("img").removeClass("black-logo").addClass("white-logo");
+        $("section").removeClass("black-logo").addClass("white-logo");
        
       } else{
         $("nav a").removeClass("white-text").addClass("blue-text");
         $("hr").removeClass("white-line").addClass("black-line");
-        $("img").removeClass("white-logo").addClass("black-logo");
+        $("section").removeClass("white-logo").addClass("black-logo");
         
       }
   
