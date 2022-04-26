@@ -39,47 +39,42 @@ h1, h2, h3, h4, h5, h6, p {
 
 #app {
   margin: 0 auto;
-  max-width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
+  width: 100%;
 }
 
-nav {
-  padding: 5px;
-  margin: 0 auto;
-  height: 100px;
-  max-width: 980px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav span {
-  color: #ee4367;
-  border-radius: 2px solid;
-  font-size: 15px;
-  padding-right: 10px;
-}
-nav .nav-bar-white {
-  max-width: 500px;
-}
-nav .nav-bar-white a {
+.nav-bar .white-text {
   color: #fff;
-  text-decoration: none;
-  font-family: Gill Sans;
-  font-size: 15px;
-  padding-right: 10px;
 }
 
-hr {
-  width: 980px;
-  border: 2px solid;
-  margin: 0 auto;
+.blue-text {
+  color: #000;
 }
 
-.home-line-white {
-  width: 980px;
-  border: 2px solid;
-  margin: 0 auto;
-  color: white;
+.white-line {
+  color: #fff;
+}
+
+.black-line {
+  color: #000;
+}
+
+.white-logo {
+  min-height: 50px;
+  width: 109px;
+  background-image: url(../images/logo-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black-logo {
+  min-height: 50px;
+  width: 109px;
+  background-image: url(../images/logo-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -96,6 +91,8 @@ nav span {
   border-radius: 2px solid;
   font-size: 15px;
   padding-right: 10px;
+  position: relative;
+  z-index: 1;
 }
 nav .nav-bar {
   max-width: 500px;
@@ -124,14 +121,17 @@ hr {
 .home-hero {
   background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
   margin: 0 auto;
+  margin-top: -100px;
   width: 100%;
-  min-height: 500px;
+  min-height: 540px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: -1;
 }
 .home-hero .hero-text {
-  margin-top: 50px;
+  padding: 100px;
   margin: 0 auto;
   max-width: 980px;
   height: 300px;
@@ -476,6 +476,7 @@ hr {
   margin: 0 auto;
   max-width: 980px;
   min-height: 513px;
+  margin-bottom: 50px;
 }
 .gallery-images .row1 {
   display: flex;

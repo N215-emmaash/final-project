@@ -573,16 +573,20 @@ var blog5Content =`<div class="blog-header">
 // this fuction is being called from the app.js and it has the page name
 
 export function modelPageName (pgName){
-    // console.log(pgName);
+    console.log(pgName);
 
-    // $("#app").html(eval(pgName));
+    $("#app").html(eval(pgName));
 
     if(pgName == "homeContent"){
         $("nav a").removeClass("blue-text").addClass("white-text");
-        $("nav span").removeClass("white-text").addClass("blue-text");
+        $("hr").removeClass("black-line").addClass("white-line");
+        $("img").removeClass("black-logo").addClass("white-logo");
+       
       } else{
         $("nav a").removeClass("white-text").addClass("blue-text");
-        $("nav span").removeClass("blue-text").addClass("white-text");
+        $("hr").removeClass("white-line").addClass("black-line");
+        $("img").removeClass("white-logo").addClass("black-logo");
+        
       }
   
       try{
