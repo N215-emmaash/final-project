@@ -13,10 +13,22 @@ h1, h2, h3, h4, h5, h6, p {
 .wrapper{
     margin: 0 auto;
     width: 100%;
+    position:relative;
+    margin-bottom: -104px;  
+    z-index: 1; 
 }
 
 #app{
     margin: 0 auto;
-    max-width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.white-text{
+    color: #fff;
+
+}
+
+.blue-text{
+    color: #000;
 }

@@ -3,7 +3,21 @@
 
 // This information simulates getting data from a database ( this is the data)
 // Nav Bar
-var homeContent = `<div class="home-testimonials">
+var homeContent = `
+<div class="home-hero">
+<div class="hero-text">
+  <p class="hero-text-line1">Header goes here</p>
+  <p class="hero-text-line2">Less important text goes here</p>
+  <p class="hero-text-line3">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+    aliquid minus nemo sed est.
+  </p>
+
+  <div class="read-more-button">
+    <a href="#">READ MORE</a>
+  </div>
+</div>
+</div><div class="home-testimonials">
 <p class="home-test-p1">
   “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
   accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab
@@ -559,9 +573,24 @@ var blog5Content =`<div class="blog-header">
 // this fuction is being called from the app.js and it has the page name
 
 export function modelPageName (pgName){
-    console.log(pgName);
+    // console.log(pgName);
 
-    $("#app").html(eval(pgName));
+    // $("#app").html(eval(pgName));
+
+    if(pgName == "homeContent"){
+        $("nav a").removeClass("blue-text").addClass("white-text");
+        $("nav span").removeClass("white-text").addClass("blue-text");
+      } else{
+        $("nav a").removeClass("white-text").addClass("blue-text");
+        $("nav span").removeClass("blue-text").addClass("white-text");
+      }
+  
+      try{
+        eval(pgName);
+        $("#app").html(eval(pgName));
+      } catch (e) {
+        console.log("hello", e);
+      }
 }
 
 
